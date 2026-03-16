@@ -17,3 +17,10 @@ axes[idx].text(0.95, 0.95, f'Outliers: {outlier_count}',
     for ax in axes[n:1]:
         fig.delaxes(ax)
 
+
+df[col].mode()
+
+
+
+df_encoded = pd.get_dummies(df_clean, columns=categorical_cols, drop_first=True)
+
